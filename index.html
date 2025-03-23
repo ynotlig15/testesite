@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOX CITY MTA:SA</title>
+    <style>
+        /* Reset básico */
+        body, h1, h2, ul, li, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212; /* Fundo escuro */
+            color: #00ff00; /* Texto verde */
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #333, #000); /* Gradiente preto */
+            color: #00ff00;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #00ff00;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background: #1e1e1e;
+            padding: 10px;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        .tabs button {
+            background: #333;
+            color: #00ff00;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .tabs button:hover {
+            background: #444;
+            transform: translateY(-3px);
+        }
+
+        .tabs button.active {
+            background: #00ff00;
+            color: #121212;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: #1e1e1e; /* Fundo cinza escuro */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 255, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            border-bottom: 2px solid #00ff00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .section ul {
+            list-style-type: none;
+        }
+
+        .section ul li {
+            background: #333;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            color: #00ff00;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .section ul li:hover {
+            background: #444;
+            transform: translateX(10px);
+        }
+
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 2px solid #00ff00;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+            color: #00ff00;
+            margin-top: 40px;
+            border-top: 2px solid #00ff00;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section ul li {
+                font-size: 1rem;
+            }
+
+            .profile-image {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FOX CITY MTA:SA</h1>
+        <p>O servidor de roleplay mais imersivo de MTA:SA!</p>
+Ip de Conexão:  mtasa://190.102.40.7:22181
+    </header>
+
+    <!-- Abas de Navegação -->
+    <div class="tabs">
+        <button onclick="openTab('home')" class="active">Início</button>
+        <button onclick="openTab('vip')">Planos VIP</button>
+        <button onclick="openTab('ids')">Compras de IDs</button>
+    </div>
+
+    <div class="container">
+        <!-- Aba Início -->
+        <div id="home" class="tab-content">
+            <div class="section">
+                <h2>Fundadores</h2>
+                <ul>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Fundador 1" class="profile-image">
+                        「FCR」・Clowdx 
+
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Fundador 2" class="profile-image">
+                        「FCR」・gusta 
+
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Fundador 3" class="profile-image">
+                        「FCR」・Anonimo 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Moderadores</h2>
+                <ul>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Moderador 1" class="profile-image">
+                        「FCR」・victorzin 
+
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Moderador 2" class="profile-image">
+                        「FCR」・Zumans ( mama pika que bane a pessoa de graça por nada)
+
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Moderador 3" class="profile-image">
+                        「FCR」・BRITT 
+
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="Moderador 4" class="profile-image">
+                        「FCR」・Anonimo
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Membros VIPs</h2>
+                <ul>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="VIP 1" class="profile-image">
+                        [Nome do VIP 1]
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="VIP 2" class="profile-image">
+                        [Nome do VIP 2]
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="VIP 3" class="profile-image">
+                        [Nome do VIP 3]
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/50" alt="VIP 4" class="profile-image">
+                        [Nome do VIP 4]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Aba Planos VIP -->
+        <div id="vip" class="tab-content" style="display: none;">
+            <div class="section">
+                <h2>Planos VIP</h2>
+                <p>Seja VIP e aproveite benefícios exclusivos!</p>
+                <ul>
+                    <li><strong>VIP Brilhante:</strong> 7,50 R$ Mensal | 15,99 R$ Permanente</li>
+                    <li><strong>VIP Ype:</strong> 12,00 R$ Mensal | 19,99 R$ Permanente</li>
+                    <li><strong>VIP Platina:</strong> 15,00 R$ Mensal | 24,99 R$ Permanente</li>
+                    <li><strong>VIP Diamante:</strong> 28,00 R$ Mensal | 34,99 R$ Permanente</li>
+                    <li><strong>VIP Patrocinador:</strong> 30,00 R$ Mensal | 54,99 R$ Permanente</li>
+                </ul>
+                <p>
+                    <a href="https://discord.gg/jPsCHxTYKc" target="_blank" style="color: #00ff00; text-decoration: none; font-weight: bold;">
+                        Clique aqui para adquirir seu VIP no Discord!
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Aba Compras de IDs -->
+        <div id="ids" class="tab-content" style="display: none;">
+            <div class="section">
+                <h2>Compras de IDs</h2>
+                <ul>
+                    <li><strong>Id de 2 dígitos:</strong> R$ 10,00</li>
+                    <li><strong>Id de 3 dígitos:</strong> R$ 8,00</li>
+                    <li><strong>Id personalizado:</strong> R$ 25,00</li>
+                </ul>
+                <p>
+                    <a href="https://discord.gg/jPsCHxTYKc" target="_blank" style="color: #00ff00; text-decoration: none; font-weight: bold;">
+                        Clique aqui para comprar IDs no Discord!
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FOX CITY MTA:SA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para alternar entre as abas
+        function openTab(tabName) {
+            // Esconde todas as abas
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Remove a classe 'active' de todos os botões
+            document.querySelectorAll('.tabs button').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Mostra a aba selecionada e marca o botão como ativo
+            document.getElementById(tabName).style.display = 'block';
+            document.querySelector(`button[onclick="openTab('${tabName}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
